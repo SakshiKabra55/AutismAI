@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% block content %}
+  <div class="text-center mt-5">
+    <h3>Speak for your Child</h3>
+    <p class="lead mb-0">Autism<span style="color: #007bff"><b>AI</b></span> will convert your Speech to Image using <span style="color: #007bff"><b>A</b></span>rtificial <span style="color: #007bff"><b>I</b></span>ntelligence</p>
+  </div>
+  <div class="text-center mt-4 mb-5" >
+    <form action="/autismAI", method="post">
+      <button type="submit" class="btn btn-primary save_button" >
+        <i class="fas fa-microphone fa-fw"></i>
+        Speak Again
+      </button>
+    </form>
+    <p style="font-size:17px", class="lead text-muted mt-2 mb-0"><i>NOTE: It supports Bengali language as of now!!</i></p>
+    <p style="font-size:27px"class="lead mt-4"><b>{{ converted_text }}</b></p>
+    <!-- <p style="font-size:27px"class="lead mt-4"><b>{{ image_name }}</b></p> -->
+
+    {% if image_name|string() == "No Image" %}
+      <p style="font-size:27px"class="lead mt-4"><b>Relevant image not available in the directory!</b></p>
+    {% else %}
+      <img class="img-fluid" src="static/All_image/{{image_name}}">
+    {% endif %}
+  </div>
+{% endblock %}

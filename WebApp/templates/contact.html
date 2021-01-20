@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+{% block content %}
+  <div class='container container-small'>
+      <div class='lead mb-5'>
+        <p style="font-size:30px", class='text-center mt-3'>Contact Us</p>
+
+        {% if success %}
+          <p class='text-center lead mt-4'>Thank you for your message. Our team will get back to you shortly.</p>
+
+        {% else %}
+          {% for message in form.name.errors %}
+            <div style='color: #DC143C', class="flash">{{ message }}</div>
+          {% endfor %}
+
+          {% for message in form.email.errors %}
+            <div style='color: #DC143C', class="flash">{{ message }}</div>
+          {% endfor %}
+
+          {% for message in form.subject.errors %}
+            <div style='color: #DC143C', class="flash">{{ message }}</div>
+          {% endfor %}
+
+          {% for message in form.message.errors %}
+            <div style='color: #DC143C', class="flash">{{ message }}</div>
+          {% endfor %}
+
+          <form action="{{ url_for('contact') }}" method=post>
+            {{ form.hidden_tag() }}
+
+            {{ form.name.label }}
+            {{ form.name }}
+
+            {{ form.email.label }}
+            {{ form.email }}
+
+            {{ form.subject.label }}
+            {{ form.subject }}
+
+            {{ form.message.label }}
+            {{ form.message }}
+
+            {{ form.submit }}
+          </form>
+
+        {% endif %}
+      </div>
+    </div>
+  </div>
+{% endblock %}

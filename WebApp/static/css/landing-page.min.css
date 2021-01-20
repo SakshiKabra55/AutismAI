@@ -1,0 +1,136 @@
+/*!
+ * Start Bootstrap - Landing Page v5.0.7 (https://startbootstrap.com/template-overviews/landing-page)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-landing-page/blob/master/LICENSE)
+ */body{font-family:Lato,'Helvetica Neue',Helvetica,Arial,sans-serif}h1,h2,h3,h4,h5,h6{font-family:Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:700}
+
+ header.masthead{
+   position:relative;
+   background-color:#343a40;
+   background:url(../img/indian-parents-kids.jpg) no-repeat center center;
+   text-align: right;
+   background-size:cover;
+   padding-top:8rem;
+   padding-bottom:8rem;
+ }
+
+ header.masthead .overlay{
+   position:absolute;
+   background-color:#212529;
+   height:100%;
+   width:100%;
+   top:0;
+   left:0;
+   opacity:0.4;
+ }
+
+ .save_button {
+    width: 160px !important;
+}
+
+ header.masthead h1{font-size:2rem}
+
+ @media (min-width:768px){
+   header.masthead{
+     padding-top:12rem;
+     padding-bottom:12rem;
+   }
+   header.masthead h1{
+     font-size:3rem;
+   }
+ }
+
+ .showcase .showcase-text{padding:3rem}
+
+ .showcase .showcase-img{min-height:30rem;background-size:cover}
+
+ @media (min-width:768px){.showcase .showcase-text{padding:7rem}}
+
+ .features-icons{padding-top:7rem;padding-bottom:7rem}
+
+ .features-icons .features-icons-item{max-width:20rem}
+
+ .features-icons .features-icons-item .features-icons-icon{height:7rem}
+
+ .features-icons .features-icons-item .features-icons-icon i{font-size:4.5rem}
+
+ .features-icons .features-icons-item:hover .features-icons-icon i{font-size:5rem}
+
+ .testimonials{padding-top:7rem;padding-bottom:7rem}
+
+ .testimonials .testimonial-item{max-width:18rem}
+
+ .testimonials .testimonial-item img{max-width:12rem;box-shadow:0 5px 5px 0 #adb5bd}
+
+ .call-to-action{position:relative;background-color:#192E3D;background-size:cover;padding-top:7rem;padding-bottom:7rem}
+
+ .call-to-action .overlay{position:absolute;background-color:#212529;height:100%;width:100%;top:0;left:0;opacity:.3}
+
+ footer.footer{padding-top:4rem;padding-bottom:4rem}
+
+ /* Contact form */
+form label {
+  font-size: 23px;
+  /* font-weight: bold; */
+  display: block;
+  margin-top: 10px;
+}
+
+form input#name,
+form input#email,
+form input#subject {
+  width: 400px;
+  height: 40px;
+  background-color: #fafafa;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+  border: 1px solid #cccccc;
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+
+form textarea#message {
+  width: 500px;
+  height: 200px;
+  background-color: #fafafa;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+  border: 1px solid #cccccc;
+  margin-bottom: 10px;
+  padding: 5px;
+  font-size: 15px;
+}
+
+form input#submit {
+  display: block;
+  font-weight: 400;
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 20px;
+  float: top;
+  margin-top: 10px;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  width: 100px !important;
+  transition: color 0.15s ease-in-out,
+  background-color 0.15s ease-in-out,
+  border-color 0.15s ease-in-out,
+  box-shadow 0.15s ease-in-out;
+}
+
+form input#submit:hover{
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
